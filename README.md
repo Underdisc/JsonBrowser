@@ -1,5 +1,5 @@
 # JsonBrowser
-:fist: A commandline based Json file browser and editor :fist:
+:facepunch: A commandline based Json file browser and editor :facepunch:
 
 ### Acquire
 
