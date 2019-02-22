@@ -1,3 +1,15 @@
+/*****************************************************************************/
+/*!
+\file JsonBrowser.cpp
+\author Connor Deakin
+\par E-mail: connortdeakin\@gmail.com
+\par Project: JsonBrowser
+\date 5/16/2017
+\brief
+  Contains the implementation for the JsonBrowser.
+*/
+/*****************************************************************************/
+
 #include <iostream>
 #include <stdio.h>
 
@@ -72,10 +84,12 @@ bool JsonBrowser::showValue(Json::ValueType value_type)
   printGeneralSelections();
   std::cout << "\033[1m\033[33;1mValue: ";
   switch (value_type) {
-    case Json::stringValue: std::cout << m_JsonValueStack.top()->asString(); break;
-    case Json::intValue:    std::cout << m_JsonValueStack.top()->asInt();    break;
-    case Json::realValue:   std::cout << m_JsonValueStack.top()->asDouble(); break;
-    default: std::cout << "NULL";                                            break;
+    case Json::stringValue:  std::cout << m_JsonValueStack.top()->asString(); break;
+    case Json::intValue:     std::cout << m_JsonValueStack.top()->asInt();    break;
+    case Json::uintValue:    std::cout << m_JsonValueStack.top()->asUInt();   break;
+    case Json::realValue:    std::cout << m_JsonValueStack.top()->asDouble(); break;
+    case Json::booleanValue: std::cout << m_JsonValueStack.top()->asBool();   break;
+    default: std::cout << "NULL";                                             break;
   }
   std::cout << "\033[0m" << std::endl;
   unsigned selected = getSelection(1);
@@ -109,11 +123,11 @@ unsigned JsonBrowser::getSelection(unsigned max) const
 {
   std::cout << "\033[32;1mEntry: ";
   unsigned selected;
-  scanf("%d", &selected);
+  scanf("%u", &selected);
   while(selected > max){
     std::cout << "\033[31;1mNot an option - Reselect" << std::endl;
     std::cout << "\033[32;1mEntry: ";
-    scanf("%d", &selected);
+    scanf("%u", &selected);
   }
   std::cout << "\033[0m";
   return selected;

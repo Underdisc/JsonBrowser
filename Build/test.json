@@ -1,0 +1,65 @@
+
+{
+   "Name" : "BootLevel",
+   "Spaces" : {
+      "Cutscene" : [],
+      "credits" : [],
+      "game" : [
+         {
+            "gameEntity" : {
+               "Transform" : {
+                  "Name" : "Transform",
+                  "Position" : [ 142.95248413085938, 183.14828491210938 ],
+                  "Rotation" : [ 0 ],
+                  "Scale" : [ 30, 30 ]
+               }
+            }
+         },
+         {
+            "GamepadWarningScreen" : {
+               "Transform" : {
+                  "Name" : "Transform",
+                  "Position" : [ 400, 250 ],
+                  "Rotation" : [ 0 ],
+                  "Scale" : [ 800, 500 ]
+               }
+            }
+         },
+         {
+            "TeamScreen" : {
+               "Transform" : {
+                  "Name" : "Transform",
+                  "Position" : [ 400, 249 ],
+                  "Rotation" : [ 0 ],
+                  "Scale" : [ 800, 500 ]
+               }
+            }
+         },
+         {
+            "DPScreen" : {
+               "Transform" : {
+                  "Name" : "Transform",
+                  "Position" : [ 400, 250 ],
+                  "Rotation" : [ 0 ],
+                  "Scale" : [ 800, 500 ]
+               }
+            }
+         }
+      ],
+      "options" : [],
+      "pause" : [],
+      "quit" : [],
+      "ui" : [
+         {
+            "uiElement" : {
+               "Transform" : {
+                  "Name" : "Transform",
+                  "Position" : [ 0, 0 ],
+                  "Rotation" : [ 0 ],
+                  "Scale" : [ 0, 0 ]
+               }
+            }
+         }
+      ]
+   }
+}

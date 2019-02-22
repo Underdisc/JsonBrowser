@@ -27,7 +27,7 @@ RESET=@tput sgr0
 
 #=MACROS========================================================================
 
-CC = clang++
+CC = g++
 CFLAGS = -c -O -Wall -Wextra -ansi -pedantic -Wunused -Werror -std=c++11
 
 SRCDIR = ../Source/

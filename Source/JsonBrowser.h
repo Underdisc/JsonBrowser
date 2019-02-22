@@ -1,3 +1,6 @@
+#ifndef JSONBROWSER_H
+#define JSONBROWSER_H
+
 #include "External/json/json.h"
 
 #include <stack>
@@ -26,3 +29,5 @@ private:
   std::stack<Json::Value *> m_JsonValueStack;
   std::vector<std::string> m_Path;
 };
+
+#endif
