@@ -1,0 +1,5 @@
+# Ignored file types.
+*.o
+
+# Ignored files
+Build/jbro.exe
